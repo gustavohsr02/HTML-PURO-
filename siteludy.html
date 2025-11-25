@@ -1,87 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psicologa Ludmila Mota</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="icon" a href="imagens/favicon.ico" type="imagem/icon">
-
+    <link rel="stylesheet" href="siteludy.css">
 </head>
-
-<body bgcolor="red">
-
+<body>
+    <!--TAG SEMANTICA PARA USAR NO TOPO-->
     <header>
-        <font size="" face="Arial" color=""> <!--quando quero alterar a fonte -->
-            <div>
-                <center>
-                    <h1>Psicóloga Ludmila Mota</h1> <!--Titulo-->
-                    <img src="imagens/psicologia-logo-png.png" alt="logo psicologia" width="115px" height="115px">
-                    <!--tag img para adicionar imagem/ tag width (largura) e a tag heigth (altura)-->
-            </div>
-            </center>
-        </font>
-        <div>
-            <nav align="center">
+        <div class="title">
+            <img src="imagens/psicologia-log-png.png.png" alt="logo psicologia" width="115px" height="115px" text-align>
+            <!--tag img para adicionar imagem/ tag width (largura) e a tag heigth (altura)-->
 
-
-                <a href="siteludy.html"><i class="bi bi-house-fill"></i>MENU</a> <!--Menu-->
-
-
-                <a href="https://w.app/psicologaludy" target="_blank"> <i class="bi bi-whatsapp"></i> WHATASAPP</a>
-                <!--acesso ao Whatasapp-->
-
-
-                <a href="https://www.instagram.com/61ludmilamota?igsh=Y3ljejFoZ3NocjJs" target="_blank"> <i
-                        class="bi bi-instagram"></i>INSTAGRAM</a> <!--Acesso ao Instagram--></p>
-
+            <h1>Psicóloga Ludmila Mota</h1> <!--TITULO DA PÁGINA-->
         </div>
-        </nav>
     </header>
+    <nav> <!--TAG NAV SE USA PARA CRAIR UM NAVEGADOR-->
+        <a href="siteludy.html"><i class="bi bi-house-fill"></i>MENU</a> <!--MENU-->
 
+        <a href="https://w.app/psicologaludy" target="_blank"> <i class="bi bi-whatsapp"></i> WHATASAPP</a>
+        <!--ACESSO AO WHATSAPP-->
+        <a href="https://www.instagram.com/61ludmilamota?igsh=Y3ljejFoZ3NocjJs" target="_blank"> <i
+                class="bi bi-instagram"></i>INSTAGRAM</a> <!--ACESSO AO INSTAGRAM--></p>
 
-    <center align="left">
-        <div>
-            <img src="imagens/ludy-img.jpeg" alt="ludy-img" width="200px" height="200px"> <!--Imagem do Perfil-->
-            <font size="" face="Arial" color="">
-
-
-                <h3>Sobre a Profissional</h3>
-            </font>
-            <ul>
-                <li>Graduada em Psicologia</li>
-                <li>Abordagem psicológica utilizada (Terapia Cognitivo-Comportamental) </li>
-
-            </ul>
-    </center>
-
-
+    </nav>
+    <h2>Sobre a Profissional</h2>
+    <div class="sobre">
+        <img id="img_redonda" src="imagens/ludy-img.jpeg" alt="ludy-img" width="200px" height="200px">
+        <!--TAG IMG SE USA PARA ADICIONAR UM IMAGEM-->
     </div>
-
-    </div>
+    <ul> <!--TAG UL SE USA PARA CRIAR UMA LISTA NÃO ORDENADA-->
+        <li>Graduada em Psicologia</li>
+        <li>Abordagem psicológica utilizada (Terapia Cognitivo-Comportamental) </li>
+    </ul>
     </p>
     <section>
-        <font size="" face="Arial" color="">
-            <h2> Cuidando da sua mente, acolhendo suas emoções</h2>
-        </font>
-        <font size="" face="Arial" color="">
-            <p align="justify">Cuidar da saúde mental é um gesto de amor próprio e uma escolha essencial para viver com
+        <div class="coluna-50"> <!--CRIAR BLOCOS/ TAG CLASS PARA SE USAR NO CSS-->
+            <h3> Cuidando da sua mente, acolhendo suas emoções</h3>
+            <p>Cuidar da saúde mental é um gesto de amor próprio e uma escolha essencial para viver com
                 mais leveza, propósito e equilíbrio.
                 <strong> Psicóloga Ludmila Mota</strong> oferece um espaço acolhedor, seguro e confidencial, dedicado ao
                 autoconhecimento e ao fortalecimento emocional.
             </p>
-
-
             <p>Com escuta empática e abordagem humanizada, o trabalho terapêutico é voltado para compreender as emoções,
                 lidar com os desafios da vida e promover o bem-estar psicológico.
                 Cada atendimento é construído de forma personalizada, respeitando a história, o ritmo e as necessidades
                 de cada pessoa.
-                <hr>
-                <font size="" face="Arial" color="">
-                    <div>
-                        <h3>Áreas de Atuação</h3>
-                </font>
+        </div>
+        <div>
+            <h3 class="coluna-50">Áreas de Atuação</h3>
             <ul>
                 <li>Terapia individual (ansiedade, depressãoa, autoestima, estresse, autoconhecimento, luto etc.)</li>
                 <li>Terapia de casal</li>
@@ -90,39 +60,31 @@
                 <li>Orientação Profissional</li>
                 <li>Atendimento online e presencial</li>
             </ul>
-            </div>
-
-            <font size="" face="Arial" color="">
-                <div>
-                    <h4>Como Funciona o Atendimento</h4>
-            </font>
+        </div>
+        <div class="coluna-center"> <!--CRIAR BLOCOS-->
+            <h4>Como Funciona o Atendimento</h4>
             <ul>
                 <li>Via WhatasApp ou instagram</li>
                 <li>Modalidades de atendimento (presencial, online ou híbrido)</li>
                 <li>Sessões de 40 minutos, a cada 15 dias</li>
                 <li>Valor da consulta: 100,00</li>
-
             </ul>
-            </div>
-
-            <p>Mais do que tratar sintomas, a psicoterapia é um caminho de transformação. É o espaço onde você aprende a
-                se ouvir, se compreender e se reconectar com o que realmente importa.</p>
+        </div>
+        <p class="p"><strong> Mais do que tratar sintomas, a psicoterapia é um caminho de transformação. É o espaço onde
+                você aprende a
+                se ouvir, se compreender e se reconectar com o que realmente importa.</p></strong>
     </section>
     <hr>
-    <footer>
-        <strong>Psicóloga Ludmila</strong>
-        <p>Atendimentos presenciais e online</p>
-        <p>CRP 4114235656</p>
-        <p>WhatasApp: 61984588</p>
-
-        <p> Psicológa Ludmila - Desenvolvido com propósito e acolhimento.</p>
-        </font>
-        <center>
-            <p>Desenvolvido por Gustavo Henrique Silva - 2025</p>
-            <p> <a href="siteludy.html">Voltar ao Topo</a></p>
-        </center>
+    <footer> <!--RODAPÉ DO SITE/ CONSIDERAÇÕES FINAIS-->
+        <div class="rodape">
+            <strong>Psicóloga Ludmila</strong>
+            <p>Atendimentos presenciais e online</p>
+            <p>CRP 4114235656</p>
+            <p>WhatasApp: 61984588</p>
+            <p> Psicológa Ludmila - Desenvolvido com propósito e acolhimento.</p>
+        </div>
+        <p class="criador">Desenvolvido por Gustavo Henrique Silva - 2025</p>
+        <p class="criador"> <a href="siteludy.html">Voltar ao Topo</a></p>
     </footer>
-    <!--Rodapé do site-->
 </body>
-
 </html>
