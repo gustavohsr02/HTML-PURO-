@@ -1,29 +1,38 @@
 body {
-    background-color: rgb(240, 226, 226); /* MUDAR O FUNDO DA PÁGINA*/
+    background-color: rgb(240, 226, 226);
+    /* MUDAR O FUNDO DA PÁGINA*/
     margin: 0;
 }
 
 * {
-    box-sizing: border-box; /*RESPEITE A LARGURA E ALTURA QUE VOCÊ DEFINE*/
+    box-sizing: border-box;
+    /*RESPEITE A LARGURA E ALTURA QUE VOCÊ DEFINE*/
 }
 
 nav {
-    text-align: center; /* ALINHA O TEXTO*/
-    margin: 0; /*CRIA UM ESPAÇO EXTERNO*/
-    padding: 1%; /*CRIA UM ESPAÇO INTERNO*/
+    text-align: center;
+    /* ALINHA O TEXTO*/
+    margin: 0%;
+    /*CRIA UM ESPAÇO EXTERNO*/
+    padding: 1%;
+    /*CRIA UM ESPAÇO INTERNO*/
     background-color: rgb(238, 159, 225);
+    display: flex;
+    justify-content: center;
 }
 
 nav a {
-    text-decoration: none; /*SERVE PARA TIRAR EFEITOS VISUAIS DO TEXTO*/
-    margin: 2%;
-    text-align: justify;
+    text-decoration: none;
+    /*SERVE PARA TIRAR EFEITOS VISUAIS DO TEXTO*/
+    margin: 1%;
+
+
 }
 
 .criador {
     text-align: center;
-    color: rgb(33, 35, 148); 
-    
+    color: rgb(33, 35, 148);
+
 }
 
 .rodape {
@@ -31,8 +40,10 @@ nav a {
 }
 
 .coluna-50 {
-    float: left; /*ORGANIZAR A COLUNA DA PÁGINA*/
-    width: 50%; /*DEFINE A LARGURA*/
+    float: left;
+    /*ORGANIZAR A COLUNA DA PÁGINA*/
+    width: 50%;
+    /*DEFINE A LARGURA*/
     padding: 15px;
 }
 
@@ -58,11 +69,112 @@ nav a {
 }
 
 .sobre {
-    display: flex; /*USADO PARA PREENCHER ESPAÇO DISPONÍVEL*/
+    display: flex;
+    /*USADO PARA PREENCHER ESPAÇO DISPONÍVEL*/
     justify-content: center;
 }
 
 h2 {
     text-align: center;
+}
+
+.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+    /*PARA DEIXAR A BARRA DE ROLAGEM ESCONDIDA*/
+}
+
+.slider-content {
+    width: 400%;
+    height: auto;
+    display: flex;
+    /*PARA A IMAGEM FICAR UM DO LADO DA OUTRA*/
+}
+
+/*DISPLAY NONE, USADO PARA ESCONDER OS BOTÕE RADIOS*/
+.slider-content input {
+    display: none;
+}
+
+.slider-box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+    background-color: rgb(238, 159, 225);
+}
+
+.slider-box img {
+    width: 50%;
+    height: 400px;
+    padding: 2%;
+}
+
+.nav-manual,
+.nav-auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 30%;
+    /*DISTANCIAR A MARGEM DO TOPO*/
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn,
+.nav-auto div {
+    border: 2px solid rgb(238, 236, 236);
+    padding: 10px;
+    border-radius: 50%;
+    /*BORDAR DO BOTÃO RADIO*/
+    cursor: pointer;
+    transition: 1s;
+}
+
+/*ULTIMA CLASS*/
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+/*MUDAR A COR DE FUNDO, DA MESMA COR DA BORDA*/
+.nav-manual .manual-btn:hover,
+.nav-auto div:hover {
+    background-color: rgb(238, 236, 236);
+}
+
+#radio1:checked~.nav-auto .auto-btn1 {
+    background-color: rgb(238, 236, 236);
+}
+
+#radio2:checked~.nav-auto .auto-btn2 {
+    background-color: rgb(238, 236, 236);
+}
+
+#radio3:checked~.nav-auto .auto-btn3 {
+    background-color: rgb(238, 236, 236);
+}
+
+#radio4:checked~.nav-auto .auto-btn4 {
+    background-color: rgb(238, 236, 236);
+}
+/*FAZER A MUDANÇA DAS IMAGENS AUTOMATICAMENTE*/
+#radio1:checked~.primeiro {
+    margin-left: 0%;
+}
+
+#radio2:checked~.primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked~.primeiro {
+    margin-left: -50%;
+}
+
+#radio4:checked~.primeiro {
+    margin-left: -75%;
 }
 
