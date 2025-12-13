@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="siteludy.css">
     <script src="slide.js" defer></script>
 </head>
+
 <body>
     <!--TAG SEMANTICA PARA USAR NO TOPO-->
     <header>
@@ -19,19 +21,19 @@
         </div>
     </header>
     <nav> <!--TAG NAV SE USA PARA CRAIR UM NAVEGADOR-->
-        <a href="siteludy.html"> MENU</a> <!--MENU-->
-        <a href="https://w.app/psicologaludy" target="_blank"> WHATASAPP</a>
+        <a href="siteludy.html"> MENU</a> <!--MENU--> <a href="https://w.app/psicologaludy" target="_blank">
+            WHATASAPP</a>
         <!--ACESSO AO WHATSAPP-->
         <a href="https://www.instagram.com/61ludmilamota?igsh=Y3ljejFoZ3NocjJs" target="_blank"> INSTAGRAM</a>
         <!--ACESSO AO INSTAGRAM--></p>
-        <a href="#"> AGENDAR</a>
+        <a href="formulario/formulario.html" target="_self"> AGENDAR</a>
     </nav>
     <h2>Sobre a Profissional</h2>
     <div class="sobre">
         <img id="img_redonda" src="imagens/ludy-img.jpeg" alt="ludy-img" width="200px" height="200px">
         <!--TAG IMG SE USA PARA ADICIONAR UM IMAGEM-->
     </div>
-    <ul> <!--TAG UL SE USA PARA CRIAR UMA LISTA NÃO ORDENADA-->
+    <ul class="topo"> <!--TAG UL SE USA PARA CRIAR UMA LISTA NÃO ORDENADA-->
         <li>Graduada em Psicologia</li>
         <li>Abordagem psicológica utilizada (Terapia Cognitivo-Comportamental) </li>
     </ul>
@@ -47,7 +49,7 @@
             <p>Com escuta empática e abordagem humanizada, o trabalho terapêutico é voltado para compreender as emoções,
                 lidar com os desafios da vida e promover o bem-estar psicológico.
                 Cada atendimento é construído de forma personalizada, respeitando a história, o ritmo e as necessidades
-                de cada pessoa.
+                de cada pessoa.</p>
         </div>
         <div>
             <h3 class="coluna-50">Áreas de Atuação</h3>
@@ -61,17 +63,15 @@
             </ul>
         </div>
         <div class="coluna-center"> <!--CRIAR BLOCOS-->
-            <h4>Como Funciona o Atendimento</h4>
+            <h3>Como Funciona o Atendimento</h3>
             <ul>
-                <li>Via WhatasApp ou instagram</li>
-                <li>Modalidades de atendimento (presencial, online ou híbrido)</li>
+                <li>Via WhatasApp ou Instagram</li>
+                <li>Modalidades de Atendimento (presencial, online ou híbrido)</li>
                 <li>Sessões de 40 minutos, a cada 15 dias</li>
-                <li>Valor da consulta: 100,00</li>
+                <li>Valor da Consulta: 100,00</li>
             </ul>
         </div>
-        <p class="p"><strong> Mais do que tratar sintomas, a psicoterapia é um caminho de transformação. É o espaço onde
-                você aprende a
-                se ouvir, se compreender e se reconectar com o que realmente importa.</p></strong>
+
     </section>
     <section class="slider">
         <div class="slider-content">
@@ -81,15 +81,19 @@
             <input type="radio" name="btn-radio" id="radio4">
             <!--IMAGENS -->
             <div class="slider-box primeiro">
+                <p><strong>ANSIEDADE</strong></p>
                 <img class="img-desktop" src="imagens/ansiedade-jpg.jpg" alt="ansiedade">
             </div>
             <div class="slider-box">
+                <p><strong>BURNOUT</strong></p>
                 <img class="img-desktop" src="imagens/burnout-2.jpg" alt="burnout">
             </div>
             <div class="slider-box">
+                <p><strong>FOBIA-SOCIAL</strong></p>
                 <img class="img-desktop" src="imagens/fobia-social-jpg.jpg" alt="fobia-social">
             </div>
             <div class="slider-box">
+                <p><strong>BAIXA-AUTOESTIMA</strong></p>
                 <img class="img-desktop" src="imagens/baixa-autoestima.jpg" alt="baixa-autoestima">
             </div>
             <!--NAVEGAÇÃO AUTOMÁTICA-->
@@ -102,7 +106,7 @@
             <!--NAVEGAÇÃO MANUAL-->
             <div class="nav-manual"></div>
             <!--LABEL CRIADA PARA FAZER UMA REFERÊNCIA AO INPUT RADIO-->
-            <label for="radio1" class="manual-btn"></label> 
+            <label for="radio1" class="manual-btn"></label>
             <label for="radio2" class="manual-btn"></label>
             <label for="radio3" class="manual-btn"></label>
             <label for="radio4" class="manual-btn"></label>
@@ -110,16 +114,29 @@
     </section>
     <hr>
     <footer> <!--RODAPÉ DO SITE/ CONSIDERAÇÕES FINAIS-->
-        <div class="rodape">
-            <strong>Psicóloga Ludmila</strong>
-            <p>Atendimentos presenciais e online</p>
-            <p>CRP 4114235656</p>
-            <p>WhatasApp: 61984588</p>
-            <p> Psicológa Ludmila - Desenvolvido com propósito e acolhimento.</p>
+        <div class="profissional">
+            <p><strong>PROFISSIONAL</strong></p>
+            <p><i class="bi bi-person-fill"></i> Psicóloga Ludmila</p>
+            <p><i class="bi bi-person-vcard-fill"></i> CRP 4114235656</p>
         </div>
-        <p class="criador">Desenvolvido por Gustavo Henrique Silva - 2025</p>
-        <p class="criador"> <a href="siteludy.html">Voltar ao Topo</a></p>
+        <div class="contato">
+            <p><strong>CONTATO</strong></p>
+            <p> <i class="bi bi-whatsapp"></i> (61) 98342-8898</p>
+            </p>
+            <p><i class="bi bi-envelope-at"></i> ludymilamota14@gmail.com</p>
+        </div>
+        <div class="midia">
+            <p><strong>MÍDIA</strong></p>
+            <p><i class="bi bi-instagram"></i>
+                <a href="https://www.instagram.com/61ludmilamota?igsh=Y3ljejFoZ3NocjJs" target="_blank">
+                    61ludmilamota</a>
+        </div>
     </footer>
+    <div class="rodape">
+        <p>Gustavo Henrique Silva Ramos - 2025
+            <a href="siteludy.html">Voltar ao Topo</a>
+        </p>
+    </div>
 </body>
 
 </html>
