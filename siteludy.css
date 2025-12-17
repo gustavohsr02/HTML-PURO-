@@ -28,11 +28,11 @@ nav a {
     text-transform: none;
     text-align: none;
 }
-
+/*USADA PARA ESTILIZAR LINKS VISITADOS*/
 a:visited {
     color: black;
 }
-
+/*SELECIONAR ELEMENTOS QUANDO PASSA O MOUSE SOBRE ELAS*/
 a:hover {
     color: white;
 }
@@ -44,7 +44,7 @@ footer {
     align-items: center;
     padding: 1%;
 }
-
+/*PARA RETIRAR AS DECORAÇÕES DO A HREF*/
 footer a {
     text-decoration: none;
 }
